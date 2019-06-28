@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Check that Homebrew is installed and install if not
+if test ! $(which brew)
+then
+  echo "  Installing Homebrew for you."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+fi
+
 # Install command-line tools using Homebrew.
 
 # Make sure we’re using the latest Homebrew.
@@ -39,12 +46,15 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+# brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
 brew install php
 brew install gmp
+
+# Java
+brew cask install adoptopenjdkvvv
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -83,9 +93,10 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
+brew install mas
 brew install p7zip
 brew install pigz
 brew install pv
@@ -95,6 +106,36 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+brew tap phinze/homebrew-cask
+
+brew cask install 1password
+brew cask install android-studio
+brew cask install bartender
+brew cask install bettertouchtool
+brew cask install dropbox
+brew cask install forklift
+brew cask install imageoptim
+brew cask install istat-menus
+brew cask install iterm2
+brew cask install kitematic
+brew cask install little-snitch
+brew cask install micro-snitch
+brew cask install mosaic
+brew cask install nextcloud
+brew cask install phpstorm
+brew cask install react-native-debugger
+brew cask install sketch
+brew cask install sourcetree
+brew cask install teamspeak-client
+brew cask install virtualbox
+brew cask install visual-studio-code
+brew cask install whatpulse
+brew cask install whatsapp
+brew cask install zeplin
+
+mas install 1039633667
+
 
 # Remove outdated versions from the cellar.
 brew cleanup

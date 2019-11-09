@@ -33,5 +33,6 @@ TODO:
 This are some things you should do before erasing your old MacBook.
 
 * `backup-automator.sh`: Backup all Automator scripts that are installed in the system
+* `backup-dotfiles.sh`:  Backup all dotfiles that are installed in the system (you have to review this afterwards!)
 * `backup-fonts.sh`:     Backup all fonts that are installed in the system
 * `backup-services.sh`:  Backup all services that are installed in the system

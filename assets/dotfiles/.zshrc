@@ -81,7 +81,6 @@ source ~/.antigen-theme-powerlevel10k.zsh
 # source ~/.antigen-theme-spaceship-promp.zsh
 # source ~/.antigen-theme-alien.zsh
 
-
 # Tell Antigen that you're done.
 antigen apply
 

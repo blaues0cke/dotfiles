@@ -68,8 +68,5 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:~/.composer/vendor/bin
 
-nvm alias default stable
-
 nvm use 10
-
-ssh-add ~/.ssh/bitbucket
+ssh-add -q ~/.ssh/bitbucket

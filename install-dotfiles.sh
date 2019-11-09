@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cp  ./assets/dotfiles/* ~
+cp -aR ./assets/dotfiles/.* ~

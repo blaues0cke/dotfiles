@@ -60,17 +60,14 @@ export PATH
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/sbin/:${PATH}
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-
-
 export ANDROID_HOME=/Users/thomaskekeisen/Library/Android/sdk
 export PATH=${ANDROID_HOME}/emulator:${PATH}
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:~/.composer/vendor/bin
 
-
 nvm alias default stable
 
-nvm use stable
+nvm use 10
 
 ssh-add ~/.ssh/bitbucket

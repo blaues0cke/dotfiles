@@ -12,6 +12,7 @@ Here is an overview:
 * `install-logic-links.sh`: Installs all symlinks required to use a external ssd with Logic Pro 
 * `install-services.sh`:    Installs services that have been included in the backup before
 * `install-software.sh`:    Installs all the tools I need using `brew` and `mas`
+* `configure-macos.sh`:     Configures macOS and sets a lot of settings
 
 ## Manually
 

@@ -7,10 +7,10 @@ This repository includes as much stuff as possible to set up a new MacBook as fa
 This project is separated in a lot of scripts you can execute by yourself.
 Here is an overview:
 
-* `install-automator.sh`: Install all Automator scripts that have been included in the backup before
-* `install-fonts.sh`:     Install all fonts that have been included in the backup before
-* `install-software.sh`:  Installs all the tools I need using `brew` and `mas`
-
+* `install-automator.sh`:   Install all Automator scripts that have been included in the backup before
+* `install-fonts.sh`:       Install all fonts that have been included in the backup before
+* `install-logic-links.sh`: Installs all symlinks required to use a external ssd with Logic Pro 
+* `install-software.sh`:    Installs all the tools I need using `brew` and `mas`
 
 ## Manually
 

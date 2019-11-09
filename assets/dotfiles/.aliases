@@ -164,7 +164,7 @@ alias android_emulator='emulator @Nexus_6P_API_27'
 alias rand='react-native run-android'
 alias rios='react-native run-ios'
 alias rios5='react-native run-ios --simulator="iPhone 5s"'
-alias fixglog="cd ./node_modules/react-native/third-party/glog-* && ../../scripts/ios-configure-glog.sh"
+alias fixglog="cd ./node_modules/react-native/third-party/glog-0.3.4 && ../../scripts/ios-configure-glog.sh"
 alias show_react_version="cat node_modules/react-native/package.json | grep version"
 
 alias please='sudo $(fc -ln -1)'

@@ -1,0 +1,14 @@
+*~
+.DS_Store
+node/node_modules/.bin
+node/node_modules
+node_modules
+php/vendor
+data.json
+public/css
+export*.xlsx
+vcs.xml
+workspace.xml
+.idea/dictionaries
+s3-cache-production
+bower_components

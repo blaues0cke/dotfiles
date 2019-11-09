@@ -60,7 +60,9 @@ export PATH
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/sbin/:${PATH}
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
-export ANDROID_HOME=/Users/thomaskekeisen/Library/Android/sdk
+
+
+export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${ANDROID_HOME}/emulator:${PATH}
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools

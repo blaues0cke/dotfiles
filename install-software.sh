@@ -58,7 +58,6 @@ brew cask install homebrew/cask-versions/adoptopenjdk8
 touch ~/.android/repositories.cfg
 brew cask install android-sdk
 
-
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
@@ -132,7 +131,7 @@ brew cask install dropbox
 brew cask install font-fira-code
 brew cask install firefox
 brew cask install forklift
-# brew cask install gifcapture - benutze ich nicht mehr, ich finde Quicktime bzw. CMD+Shift+5 besser
+# brew cask install gifcapture - I do not use this anylonger since I prefer Quicktime and CMD+Shift+5
 brew cask install hex-fiend
 brew cask install keystore-explorer
 brew cask install imageoptim
@@ -168,16 +167,12 @@ brew cask install whatpulse
 brew cask install whatsapp
 brew cask install zeplin
 
-
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
 brew cask install wkhtmltopdf
 
-
-
-
-mas install 970502923 # Typeeto
-mas install 1039633667 # Irvue
-mas install 497799835  # Xcode
+mas install 970502923   # Typeeto
+mas install 1039633667  # Irvue
+mas install 497799835   # Xcode
 mas install 1081413713  # Gif Brewery
 
 composer global require laravel/valet
@@ -189,16 +184,10 @@ valet trust
 
 xcode-select —-install
 
-# install oh my zsh
+# Install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 mkdir ~/.nvm
 
-
 # Remove outdated versions from the cellar.
 brew cleanup
-
-
-
-echo "Warning, apps you have to download manually:"
-echo "- Retini"

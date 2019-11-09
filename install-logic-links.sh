@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo rm -rf /Library/Application\ Support/Logic/*
 sudo rm -rf /Library/Audio/Apple\ Loops*
 

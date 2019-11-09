@@ -10,13 +10,16 @@ done;
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+#setopt nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
+#setopt histappend;
 
 # Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
+#setopt cdspell;
+
+# Default use vscode 
+export EDITOR=code
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
@@ -35,16 +38,39 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null; then
-	complete -o default -o nospace -F _git g;
-fi;
+# if type _git &> /dev/null; then
+#	complete -o default -o nospace -F _git g;
+#fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+# [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
-complete -W "NSGlobalDomain" defaults;
+# complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
-complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+# complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+export PATH
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/sbin/:${PATH}
+export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
+
+
+export ANDROID_HOME=/Users/thomaskekeisen/Library/Android/sdk
+export PATH=${ANDROID_HOME}/emulator:${PATH}
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:~/.composer/vendor/bin
+
+
+nvm alias default stable
+
+nvm use stable
+
+ssh-add ~/.ssh/bitbucket

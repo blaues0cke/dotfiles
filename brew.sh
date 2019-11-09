@@ -54,7 +54,10 @@ brew install php
 brew install gmp
 
 # Java
-brew cask install adoptopenjdkvvv
+brew cask install homebrew/cask-versions/adoptopenjdk8
+touch ~/.android/repositories.cfg
+brew cask install android-sdk
+
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -105,37 +108,97 @@ brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
+brew install zsh
 brew install zopfli
+brew install nvm
+brew install composer
+brew install watchman
 
 brew tap phinze/homebrew-cask
 
+brew cask install xquartz
+
 brew cask install 1password
 brew cask install android-studio
+brew cask install arduino
+brew cask install balsamiq-mockups
 brew cask install bartender
 brew cask install bettertouchtool
+brew cask install cakebrew
+brew cask install charles
+brew cask install colorsnapper
+brew cask install docker-toolbox
 brew cask install dropbox
+brew cask install font-fira-code
+brew cask install firefox
 brew cask install forklift
+# brew cask install gifcapture - benutze ich nicht mehr, ich finde Quicktime bzw. CMD+Shift+5 besser
+brew cask install hex-fiend
+brew cask install keystore-explorer
 brew cask install imageoptim
+brew cask install inkscape
+brew cask install intel-power-gadget
 brew cask install istat-menus
 brew cask install iterm2
+brew cask install keka
 brew cask install kitematic
 brew cask install little-snitch
+brew cask install macdown
+brew cask install macpass
 brew cask install micro-snitch
 brew cask install mosaic
+brew cask install postman
 brew cask install nextcloud
+brew cask install ngrok
 brew cask install phpstorm
 brew cask install react-native-debugger
+brew cask install sequel-pro
 brew cask install sketch
+brew cask install slack
+brew cask install soundcleod
 brew cask install sourcetree
+brew cask install spotify
+brew cask install teamviewer
 brew cask install teamspeak-client
+brew cask install ultimaker-cura
 brew cask install virtualbox
 brew cask install visual-studio-code
+brew cask install vlc
 brew cask install whatpulse
 brew cask install whatsapp
 brew cask install zeplin
 
-mas install 1039633667
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+brew cask install wkhtmltopdf
+
+
+
+
+mas install 970502923 # Typeeto
+mas install 1039633667 # Irvue
+mas install 497799835  # Xcode
+mas install 1081413713  # Gif Brewery
+
+composer global require laravel/valet
+
+npm install -g react-native-cli
+
+valet install
+valet trust
+
+xcode-select —-install
+
+# install oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+mkdir ~/.nvm
 
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+
+echo "Warning, apps you have to download manually:"
+echo "- Retini"

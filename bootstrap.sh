@@ -25,3 +25,10 @@ else
 	fi;
 fi;
 unset doIt;
+
+reload
+
+echo "Done + reloaded shell"
+
+nvm install 7.4
+nvm install stable

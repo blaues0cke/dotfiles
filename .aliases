@@ -149,3 +149,32 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+### Custom
+alias edit_hosts='code /etc/hosts'
+alias cleardns='sudo killall -HUP mDNSResponder'
+
+# SSH
+alias fix_key_rights='chmod 600 ~/.ssh/*'
+
+#  Lulububu
+alias jira_default_tasks='node /Users/thomaskekeisen/Projects/lulububu-jira-manager/node/index.js'
+
+# Bolt
+alias bt="php ./app/nut"
+
+# Symfony
+alias composer4g="php -d memory_limit=4G /usr/local/bin/composer"
+alias sfdsu="sf doctrine:schema:update --force"
+
+# App dev + react native
+alias android_emulator='emulator @Nexus_6P_API_27'
+alias rand='react-native run-android'
+alias rios='react-native run-ios'
+alias rios5='react-native run-ios --simulator="iPhone 5s"'
+alias fixglog="cd ./node_modules/react-native/third-party/glog-* && ../../scripts/ios-configure-glog.sh"
+alias show_react_version="cat node_modules/react-native/package.json | grep version"
+
+alias please='sudo $(fc -ln -1)'
+
+export REACT_DEBUGGER="open -g 'rndebugger://set-debugger-loc?host=localhost&port=8081' --args"

@@ -170,6 +170,7 @@ brew cask install zeplin
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
 brew cask install wkhtmltopdf
 
+mas install 634148309   # Logic Pro
 mas install 970502923   # Typeeto
 mas install 1039633667  # Irvue
 mas install 497799835   # Xcode

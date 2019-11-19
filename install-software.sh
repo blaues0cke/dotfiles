@@ -96,6 +96,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install imagemagick
+brew install graphicsmagick
 brew install lua
 brew install lynx
 brew install mas

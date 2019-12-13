@@ -21,6 +21,7 @@ so what you have to do manually is:
 
 * Download and install Retini from https://github.com/terwanerik/Retini
 * Download and install SketchUp 2017
+* Download and install Silhouette Studio from https://www.silhouetteamerica.com/software
 
 
 TODO:

@@ -115,6 +115,7 @@ brew install composer
 brew install watchman
 
 brew tap phinze/homebrew-cask
+brew tap homebrew/cask-drivers
 
 brew cask install xquartz
 
@@ -134,6 +135,7 @@ brew cask install firefox
 brew cask install forklift
 # brew cask install gifcapture - I do not use this anylonger since I prefer Quicktime and CMD+Shift+5
 brew cask install hex-fiend
+brew cask install keycastr
 brew cask install keystore-explorer
 brew cask install imageoptim
 brew cask install inkscape
@@ -155,6 +157,7 @@ brew cask install react-native-debugger
 brew cask install sequel-pro
 brew cask install sketch
 brew cask install slack
+brew cask install sonos
 brew cask install soundcleod
 brew cask install sourcetree
 brew cask install spotify

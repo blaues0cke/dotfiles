@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 # Check that Homebrew is installed and install if not
-if test ! $(which brew)
-then
-  echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+if test ! $(which brew); then
+	echo "  Installing Homebrew for you."
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install command-line tools using Homebrew.
@@ -35,9 +34,9 @@ brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
+	echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells
+	chsh -s "${BREW_PREFIX}/bin/bash"
+fi
 
 # Install `wget`
 brew install wget
@@ -171,14 +170,15 @@ brew cask install whatpulse
 brew cask install whatsapp
 brew cask install zeplin
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" </dev/null 2>/dev/null
+brew install caskroom/cask/brew-cask 2>/dev/null
 brew cask install wkhtmltopdf
 
-mas install 634148309   # Logic Pro
-mas install 970502923   # Typeeto
-mas install 1039633667  # Irvue
-mas install 497799835   # Xcode
-mas install 1081413713  # Gif Brewery
+mas install 634148309  # Logic Pro
+mas install 970502923  # Typeeto
+mas install 1039633667 # Irvue
+mas install 497799835  # Xcode
+mas install 1081413713 # Gif Brewery
 
 composer global require laravel/valet
 
@@ -196,3 +196,5 @@ mkdir ~/.nvm
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "Done, you may want to reboot now to make all PATH variables work properly."

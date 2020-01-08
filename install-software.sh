@@ -111,6 +111,7 @@ brew install vbindiff
 brew install zsh
 brew install zopfli
 brew install nvm
+brew install mackup
 brew install composer
 brew install watchman
 
@@ -133,6 +134,8 @@ brew cask install dropbox
 brew cask install font-fira-code
 brew cask install firefox
 brew cask install forklift
+brew cask install flume
+brew cask install google-chrome
 # brew cask install gifcapture - I do not use this anylonger since I prefer Quicktime and CMD+Shift+5
 brew cask install hex-fiend
 brew cask install keycastr

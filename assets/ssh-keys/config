@@ -1,0 +1,5 @@
+Host thomaskekeisen-Bitbucket
+	HostName bitbucket.org
+	User thomaskekeisen
+	PreferredAuthentications publickey
+	IdentityFile /Users/thomaskekeisen/.ssh/bitbucket

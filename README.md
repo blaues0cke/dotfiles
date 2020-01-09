@@ -61,6 +61,8 @@ so what you have to do manually is:
     * Capture Area: 0
 * Configure Kitematic
 * Configure Keka
+* Configure Chrome
+    * Disalbe desktop notifications
 * Configure Sketch and add the license
 * Configure Bartender and add the license
 * Configure Spotify

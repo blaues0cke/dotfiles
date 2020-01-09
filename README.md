@@ -25,7 +25,7 @@ so what you have to do manually is:
 
 * Enable all accounts in the preferences
 * Download and install Retini from https://github.com/terwanerik/Retini
-* Download and install SketchUp 2017
+* Download and install SketchUp 2017 (https://help.sketchup.com/en/downloading-older-versions)
 * Download and install Little Snitch (maybe by tiping `brew cask reinstall little-snitch` since it requires a installer to run)
 * Download and install Silhouette Studio from https://www.silhouetteamerica.com/software
 * Configure Micro Snitch
@@ -37,7 +37,23 @@ so what you have to do manually is:
 * Export the iStatsMenus configuration and install it on the new machine
 * Export the iTerm settings/set it to `/Users/thomaskekeisen/Dropbox/private/configurations/iTerm2`
 * Install sudo touch id
+    * `sudo nano /etc/pam.d/sudo`
+    * Paste `auth sufficient pam_tid.so` on line 2 of the document (underneath the initial comment line)
+    * On default terminal works like a charm, but on iTerm2 need an extra configuration. Go to Prefs -> Advanced -> Allow sessions to survive logging out and back in and set value to no.
 * Set the finder settings and favorites
+	* Sidebar
+		* Nextcloud
+		* Dropbox
+		* Applications
+		* thomaskekeisen
+		* Downloads
+		* Desktop
+		* Documents
+		* Projects
+	* Settings
+		* Show all hard drives
+		* Hide recent tags
+		* Remove items from the Trash after 30 days
 * Export the BetterTouchTool configuration and install it on the new machine and add the license
 * Configure ColorSnapper2 and add the license
     * Shortcut: Shift + CMD + C
@@ -49,12 +65,17 @@ so what you have to do manually is:
 * Configure Bartender and add the license
 * Configure Spotify
 * Configure SoundCleod
+* Configure Sourcetree
+	* Enable force push
 * Configure Slack
 * Configure Flume
 * Configure WhatsApp
 * Configure Xcode
 * Configure Teamspeak
 * Configure Android Studio
+* Configure iMessage and enable Text Message Forwarding on the iPhone
+* Configure Mosaic and disable the license on the old MacBook
+* Install `valet`  by typting `valet install` followe by `valet trust`
 * Finalize the ToucBbar
 * Finalize the Dock
 

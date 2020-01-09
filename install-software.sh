@@ -185,7 +185,10 @@ mas install 1081413713 # Gif Brewery
 
 composer global require laravel/valet
 
-npm install -g react-native-cli
+nvm install 7.4
+nvm install 10
+
+npm install -g react-native-cli gulp bower
 
 valet install
 valet trust

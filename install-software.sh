@@ -2,8 +2,8 @@
 
 # Check that Homebrew is installed and install if not
 if test ! $(which brew); then
-	echo "  Installing Homebrew for you."
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "  Installing Homebrew for you."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install command-line tools using Homebrew.
@@ -34,8 +34,8 @@ brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-	echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells
-	chsh -s "${BREW_PREFIX}/bin/bash"
+  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells
+  chsh -s "${BREW_PREFIX}/bin/bash"
 fi
 
 # Install `wget`
@@ -128,6 +128,7 @@ brew cask install bettertouchtool
 brew cask install cakebrew
 brew cask install charles
 brew cask install colorsnapper
+#brew cask install docker
 brew cask install docker-toolbox
 brew cask install dropbox
 brew cask install font-fira-code
@@ -145,7 +146,7 @@ brew cask install intel-power-gadget
 brew cask install istat-menus
 brew cask install iterm2
 brew cask install keka
-brew cask install kitematic
+#brew cask install kitematic - This seems to be obsolete an replaced by "docker" what also serves Docker Desktop
 brew cask install little-snitch
 brew cask install macdown
 brew cask install macpass
@@ -189,6 +190,8 @@ nvm install 7.4
 nvm install 10
 
 npm install -g react-native-cli gulp bower
+
+sudo gem install cocoapods
 
 valet install
 valet trust

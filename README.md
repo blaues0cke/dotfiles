@@ -28,6 +28,7 @@ so what you have to do manually is:
 * Download and install SketchUp 2017 (https://help.sketchup.com/en/downloading-older-versions)
 * Download and install Little Snitch (maybe by tiping `brew cask reinstall little-snitch` since it requires a installer to run)
 * Download and install Silhouette Studio from https://www.silhouetteamerica.com/software
+* Download and install Spark AR Studio from https://sparkar.facebook.com/ar-studio/download/
 * Configure Micro Snitch
 * Configure 1Password
 * Configure WhatPulse

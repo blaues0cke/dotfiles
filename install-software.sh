@@ -92,6 +92,7 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
+brew install dosbox
 brew install git
 brew install git-lfs
 brew install imagemagick
@@ -113,6 +114,7 @@ brew install nvm
 brew install mackup
 brew install composer
 brew install watchman
+brew install ffmpeg
 
 brew tap phinze/homebrew-cask
 brew tap homebrew/cask-drivers
@@ -122,6 +124,7 @@ brew cask install xquartz
 brew cask install 1password
 brew cask install android-studio
 brew cask install arduino
+brew cask install balenaetcher
 brew cask install balsamiq-mockups
 brew cask install bartender
 brew cask install bettertouchtool
@@ -130,6 +133,7 @@ brew cask install charles
 brew cask install colorsnapper
 #brew cask install docker
 brew cask install docker-toolbox
+brew cask install dosbox
 brew cask install dropbox
 brew cask install font-fira-code
 brew cask install firefox
@@ -145,6 +149,7 @@ brew cask install inkscape
 brew cask install intel-power-gadget
 brew cask install istat-menus
 brew cask install iterm2
+brew cask install keepingyouawake
 brew cask install keka
 #brew cask install kitematic - This seems to be obsolete an replaced by "docker" what also serves Docker Desktop
 brew cask install little-snitch
@@ -156,6 +161,7 @@ brew cask install postman
 brew cask install nextcloud
 brew cask install ngrok
 brew cask install phpstorm
+brew cask install quitter
 brew cask install react-native-debugger
 brew cask install sequel-pro
 brew cask install sketch
@@ -164,6 +170,7 @@ brew cask install sonos
 brew cask install soundcleod
 brew cask install sourcetree
 brew cask install spotify
+#brew cask install steam
 brew cask install teamviewer
 brew cask install teamspeak-client
 brew cask install ultimaker-cura

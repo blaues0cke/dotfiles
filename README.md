@@ -23,6 +23,7 @@ Here is an overview:
 Unfortunately some things cannot (yet) configured automatically,
 so what you have to do manually is:
 
+* Call `create-folders.sh`
 * Enable all accounts in the preferences
 * Download and install Retini from https://github.com/terwanerik/Retini
 * Download and install SketchUp 2017 (https://help.sketchup.com/en/downloading-older-versions)

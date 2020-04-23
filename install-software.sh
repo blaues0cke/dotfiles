@@ -168,6 +168,7 @@ brew cask install sketch
 brew cask install slack
 brew cask install sonos
 brew cask install soundcleod
+brew cask install sound-control
 brew cask install sourcetree
 brew cask install spotify
 #brew cask install steam
@@ -196,7 +197,7 @@ composer global require laravel/valet
 nvm install 7.4
 nvm install 10
 
-npm install -g react-native-cli gulp bower
+npm install -g react-native-cli gulp bower react-native-rename
 
 sudo gem install cocoapods
 

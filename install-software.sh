@@ -2,8 +2,8 @@
 
 # Check that Homebrew is installed and install if not
 if test ! $(which brew); then
-  echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo "  Installing Homebrew for you."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install command-line tools using Homebrew.
@@ -34,8 +34,8 @@ brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells
-  chsh -s "${BREW_PREFIX}/bin/bash"
+    echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells
+    chsh -s "${BREW_PREFIX}/bin/bash"
 fi
 
 # Install `wget`
@@ -59,6 +59,7 @@ brew cask install android-sdk
 
 # Install font tools.
 brew tap bramstein/webfonttools
+brew install ttf2eot
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
@@ -75,13 +76,16 @@ brew install fcrackzip
 brew install foremost
 brew install hashpump
 brew install hydra
+brew install imageoptim-cli
 brew install john
 brew install knock
 brew install netpbm
 brew install nmap
 brew install pngcheck
+brew install hudochenkov/sshpass/sshpass
 brew install socat
 brew install sqlmap
+brew install subversion
 brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
@@ -102,10 +106,12 @@ brew install lynx
 brew install mas
 brew install p7zip
 brew install pigz
+brew install python@3.7
 brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
+brew install switchaudio-osx
 brew install tree
 brew install vbindiff
 brew install zsh
@@ -122,8 +128,11 @@ brew tap homebrew/cask-drivers
 brew cask install xquartz
 
 brew cask install 1password
+brew cask install alfred
+brew cask install android-file-transfer
 brew cask install android-studio
 brew cask install arduino
+brew cask install background-music
 brew cask install balenaetcher
 brew cask install balsamiq-mockups
 brew cask install bartender
@@ -135,69 +144,92 @@ brew cask install colorsnapper
 brew cask install docker-toolbox
 brew cask install dosbox
 brew cask install dropbox
+brew cask install dymo-label
 brew cask install font-fira-code
 brew cask install firefox
 brew cask install forklift
-brew cask install flume
+# brew cask install flume - Instagram web replaces this
+brew cask install gpg-suite-no-mail
 brew cask install google-chrome
 # brew cask install gifcapture - I do not use this anylonger since I prefer Quicktime and CMD+Shift+5
 brew cask install hex-fiend
 brew cask install keycastr
 brew cask install keystore-explorer
 brew cask install imageoptim
+brew cask install imageoptim-cli
 brew cask install inkscape
 brew cask install intel-power-gadget
 brew cask install istat-menus
 brew cask install iterm2
+brew cask install jdownloader
 brew cask install keepingyouawake
 brew cask install keka
 #brew cask install kitematic - This seems to be obsolete an replaced by "docker" what also serves Docker Desktop
 brew cask install little-snitch
+# brew cask install lg-onscreen-control - Sucks since I only can manage applications on the screen instead of the monitor settings
 brew cask install macdown
 brew cask install macpass
+brew cask install meshmixer
 brew cask install micro-snitch
+brew cask install monero-wallet
 brew cask install mosaic
+brew cask install obs
 brew cask install postman
 brew cask install nextcloud
 brew cask install ngrok
 brew cask install phpstorm
 brew cask install quitter
 brew cask install react-native-debugger
+brew cask install openscad
 brew cask install sequel-pro
+brew cask install shadow
 brew cask install sketch
+brew cask install skype
 brew cask install slack
 brew cask install sonos
 brew cask install soundcleod
 brew cask install sound-control
 brew cask install sourcetree
 brew cask install spotify
+brew cask install stay
+#brew cask install streamlabs-obs # i am using obs instead
 #brew cask install steam
+#brew cask install sweet-home3d
 brew cask install teamviewer
 brew cask install teamspeak-client
+brew cask install telegram
+brew cask install tor-browser
 brew cask install ultimaker-cura
 brew cask install virtualbox
 brew cask install visual-studio-code
+brew cask install vnc-viewer
 brew cask install vlc
+brew cask install wasabi-wallet
 brew cask install whatpulse
 brew cask install whatsapp
+brew cask install wireshark
 brew cask install zeplin
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" </dev/null 2>/dev/null
 brew install caskroom/cask/brew-cask 2>/dev/null
 brew cask install wkhtmltopdf
 
+mas install 483350546  # Meme Generator
+# todo: final cut
 mas install 634148309  # Logic Pro
 mas install 970502923  # Typeeto
 mas install 1039633667 # Irvue
 mas install 497799835  # Xcode
 mas install 1081413713 # Gif Brewery
 
+composer global require phpunit/phpunit
 composer global require laravel/valet
 
 nvm install 7.4
 nvm install 10
 
-npm install -g react-native-cli gulp bower react-native-rename
+npm install -g react-native-cli gulp bower react-native-rename react-devtools
+npm install -g @electron/build-tools
 
 sudo gem install cocoapods
 

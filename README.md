@@ -93,6 +93,8 @@ TODO:
 * copy all projects (https://apple.stackexchange.com/questions/267622/transfer-data-between-two-mac-via-usb-c)
 * run react native app
 * run symfony app
+install https://github.com/johnboiles/obs-mac-virtualcam
+install https://ashung.github.io/Automate-Sketch/
 
 
 
